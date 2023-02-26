@@ -21,10 +21,19 @@ export default class Controls {
       this.circleFirst = this.experience.world.floor.circleFirst;
       this.circleSecond = this.experience.world.floor.circleSecond;
       this.circleThird = this.experience.world.floor.circleThird;
+
       GSAP.registerPlugin(ScrollTrigger);
 
-      this.setSmoothScroll();
-      this.setScrollTrigger();
+      // if (
+      //    !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      //       navigator.userAgent
+      //    )
+      // ) {
+      //    this.setSmoothScroll();
+      // }
+
+      // this.setSmoothScroll();
+      // this.setScrollTrigger();
 
       // this.setPath();
 
@@ -252,6 +261,8 @@ export default class Controls {
                   scrub: 0.6,
                   invalidateOnRefresh: true,
                },
+            }).to(this.room.position, {
+               z: -4.5,
             });
          },
 

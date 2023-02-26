@@ -101,6 +101,8 @@ export default class Room {
       rectLight.rotation.z = Math.PI / 4;
       this.actualRoom.add(rectLight);
 
+      this.roomChildren["rectLight"] = rectLight;
+
       this.scene.add(this.actualRoom);
       this.actualRoom.scale.set(0.11, 0.11, 0.11);
       // this.actualRoom.position.set(0, 0, 1);

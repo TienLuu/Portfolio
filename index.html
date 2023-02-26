@@ -6,11 +6,10 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name='viewport'
     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui' />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <title>Abigail Bloom</title>
 </head>
@@ -31,7 +30,7 @@
     </div>
   </div>
 
-  <section class="page" asscroll-container>
+  <div class="page" asscroll-container>
     <div class="toggle-bar">
       <div class="sun-wrapper">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
@@ -236,9 +235,10 @@
         </div>
       </section>
     </div>
-  </section>
+  </div>
 
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     function sendEmail() {
       const email = document.getElementById("email");
@@ -270,6 +270,7 @@
       );
     }
   </script>
+
   <script type="module" src="/main.js"></script>
 </body>
 

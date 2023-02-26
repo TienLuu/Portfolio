@@ -366,6 +366,8 @@ export default class Preloader extends EventEmitter {
    async playSecondIntro() {
       await this.secondIntro();
       document.querySelector(".page").style.overflow = "visible";
+      this.world.controls.setSmoothScroll();
+      this.world.controls.setScrollTrigger();
       this.emit("enablecontrols");
    }
 
